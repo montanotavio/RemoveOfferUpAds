@@ -1,0 +1,23 @@
+{
+    "name": "Offerup Ad Remover",
+    "description": "Removes Offerup Ads that distract you from real listings!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://*.offerup.com/search*"],
+          "js": ["contentScript.js"]
+        }
+      ],
+    "permissions": ["tabs"],
+    "action": {
+        "default_title": "Remove Offerup Ads",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/images/OfferupAdSymbol32.png",
+            "48": "/images/OfferupAdSymbol16.png",
+            "32": "/images/OfferupAdSymbol32.png",
+            "16": "/images/OfferupAdSymbol16.png"
+        }
+    }
+}
