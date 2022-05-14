@@ -41,6 +41,24 @@ function main() {
 
 window.addEventListener("load",main);
 
+// reactivate main on new search term page
+var newSearchTerm = false;
+function reactivate() {
+    numPosts = document.getElementById("__next").lastChild.lastChild.getElementsByTagName('a').length;
+    if (numPosts > 0 && !newSearchTerm) {
+        newSearchTerm = true;
+        window.removeEventListener("animationstart", reactivate)
+        main();
+
+        setTimeout( () => { 
+            window.addEventListener("animationstart", reactivate);
+            newSearchTerm = false;
+        }, 2000);
+    }
+}
+
+window.addEventListener("animationstart", reactivate);
+
 // reload page to restart script
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
