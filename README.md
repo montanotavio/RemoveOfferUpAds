@@ -1,6 +1,6 @@
 # Remove OfferUp Ads Using This Chromium Extension
 
-Inspired by an outdated chrome extension, this will allow anyone to view real listings only on the OfferUp website! ![alt text](https://github.com/montanotavio/RemoveOfferUpAds/blob/main/images/OfferupAdSymbol32.png)
+This will allow anyone to view real listings only on the OfferUp website! ![alt text](https://github.com/montanotavio/RemoveOfferUpAds/blob/main/images/OfferupAdSymbol32.png)
 
 ## Motivation
 
@@ -10,10 +10,10 @@ I use OfferUp to view local listings in my area. However, the listings inserted 
 
 To Use this extension:
 
-- pull the repository  
+- Pull the repository  
 
-- enable chromium developer options
+- Enable chromium developer options
 
-- click load unpack and select the folder
+- Click load unpack and select the folder
 
 I will try to upload this to the webstore so more people can use it!
